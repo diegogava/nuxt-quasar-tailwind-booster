@@ -3,7 +3,7 @@
     const { isHydrated } = useHydration()
 
     // Fonts
-    const { $getFont } = useBoosterFonts(undefined)
+    const { $getFont } = useBoosterFonts()
 
     // Booster
     import boosterHydrate from '#booster/hydrate'
@@ -11,17 +11,26 @@
 
     // Components
     const MenuFooter = hydrate(() => import('@/components/menu-footer/index.vue'))
-    const MenuDrawer = hydrate(() => import('@/components/menu-drawer/index.vue'))
-    const Edit = hydrate(() => import('@/components/edit/index.vue'))
+
+    import MenuDrawer from '@/components/menu-drawer/index.vue'
+    import Edit from '@/components/edit/index.vue'
+    
+    // const Edit = hydrate(() => import('@/components/edit/index.vue'))
+
+
+    const ElementButtonPrimary = hydrate(() => import('@/components/element/Button/Primary.vue'))
+    const ElementButtonSecondary = hydrate(() => import('@/components/element/Button/Secondary.vue'))
+    const ElementButtonTeritary = hydrate(() => import('@/components/element/Button/Teritary.vue'))
 
 </script>
 <template>
-    <q-btn v-if="isHydrated" v-font="$getFont('Roboto', 400, 'normal')" color="primary" label="Primary" rounded></q-btn>
-    <QBtn  v-if="isHydrated" v-font="$getFont('Roboto', 400, 'normal')" color="secondary" label="Secondary" />
-    <LazyQBtn color="amber" v-font="$getFont('Roboto', 400, 'normal')" glossy label="Amber" />
-    <menu-footer></menu-footer>
+    <ElementButtonPrimary critical label="Primary" />
+    <ElementButtonSecondary critical label="Secondary" />
+    <ElementButtonTeritary critical label="Teritary" />
 
-    <menu-drawer></menu-drawer>
+    <menu-footer critical></menu-footer>
 
+    <menu-drawer critical></menu-drawer>
+    
     <edit></edit>
 </template>

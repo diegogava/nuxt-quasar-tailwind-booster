@@ -27,3 +27,4 @@ logs
 .nuxt/
 .output/
 package-lock.json
+.history

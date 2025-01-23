@@ -64,12 +64,12 @@
   <booster-layer v-bind="$attrs"
     class="fixed !w-[100vw] !min-h-[100vh] !top-0 z-[2000] backdrop-filter backdrop-brightness-75 backdrop-blur nuxt-booster-layer-visible">
     <div class="p-4 w-full">
-      <p v-font="$getFont('Roboto', 400, 'normal')"
+      <p v-font="$getFont('RobotoOverride', 400, 'normal')"
         class="text-center">
         {{messages.main}}
       </p>
       <ul class="p-0 list-none text-center"
-        v-font="$getFont('Roboto', 700, 'normal')">
+        v-font="$getFont('RobotoOverride', 700, 'normal')">
         <li id="nuxt-booster-message-nojs">
             {{messages.booster.disabledJS}}
         </li>
@@ -87,7 +87,7 @@
         </li>
       </ul>
       <div class="info-layer-buttons w-full flex flex-col items-center"
-        v-font="$getFont('Roboto', 700, 'normal')">
+        v-font="$getFont('RobotoOverride', 700, 'normal')">
         <button class="nuxt-booster-button-init-nojs mt-3 p-3 bg-gray-500/30 rounded cursor-pointer">
           <label for="nuxt-booster-layer-close">
             {{messages.close.noJS}}
