@@ -26,7 +26,7 @@ export default defineNuxtConfig({
       browserSupport: true
     },
     fonts: [{
-            family: 'Roboto',
+            family: 'RobotoOverride',
             locals: ['Roboto'],
             fallback: ['Georgia', 'sans-serif'],
             variances: [
@@ -35,7 +35,7 @@ export default defineNuxtConfig({
                     weight: 900,
                     sources: [
                         {
-                            src: '@/assets/fonts/roboto/roboto-black.woff',
+                            src: '@/assets/fonts/roboto-v47-latin/roboto-v47-latin-900.woff2',
                             type: 'woff'
                         },
                     ]
@@ -45,7 +45,7 @@ export default defineNuxtConfig({
                         weight: 900,
                         sources: [
                             {
-                                src: '@/assets/fonts/roboto/roboto-black-italic.woff',
+                                src: '@/assets/fonts/roboto-v47-latin/roboto-v47-latin-900italic.woff2',
                                 type: 'woff'
                             },
                         ]
@@ -55,7 +55,7 @@ export default defineNuxtConfig({
                         weight: 700,
                         sources: [
                             {
-                                src: '@/assets/fonts/roboto/roboto-bold.woff',
+                                src: '@/assets/fonts/roboto-v47-latin/roboto-v47-latin-700.woff2',
                                 type: 'woff'
                             },
                         ]
@@ -65,17 +65,17 @@ export default defineNuxtConfig({
                         weight: 700,
                         sources: [
                             {
-                                src: '@/assets/fonts/roboto/roboto-bold-italic.woff',
+                                src: '@/assets/fonts/roboto-v47-latin/roboto-v47-latin-700italic.woff2',
                                 type: 'woff'
                             },
                         ]
                     },
                     {
                         style: 'italic',
-                        weight: 500,
+                        weight: 400,
                         sources: [
                             {
-                                src: '@/assets/fonts/roboto/roboto-italic.woff',
+                                src: '@/assets/fonts/roboto-v47-latin/roboto-v47-latin-italic.woff2',
                                 type: 'woff'
                             },
                         ]
@@ -85,7 +85,7 @@ export default defineNuxtConfig({
                         weight: 300,
                         sources: [
                             {
-                                src: '@/assets/fonts/roboto/roboto-light.woff',
+                                src: '@/assets/fonts/roboto-v47-latin/roboto-v47-latin-300.woff2',
                                 type: 'woff'
                             },
                         ]
@@ -95,7 +95,7 @@ export default defineNuxtConfig({
                         weight: 300,
                         sources: [
                             {
-                                src: '@/assets/fonts/roboto/roboto-light-italic.woff',
+                                src: '@/assets/fonts/roboto-v47-latin/roboto-v47-latin-300italic.woff2',
                                 type: 'woff'
                             },
                         ]
@@ -105,7 +105,7 @@ export default defineNuxtConfig({
                         weight: 500,
                         sources: [
                             {
-                                src: '@/assets/fonts/roboto/roboto-medium.woff',
+                                src: '@/assets/fonts/roboto-v47-latin/roboto-v47-latin-500.woff2',
                                 type: 'woff'
                             },
                         ]
@@ -115,7 +115,7 @@ export default defineNuxtConfig({
                         weight: 500,
                         sources: [
                             {
-                                src: '@/assets/fonts/roboto/roboto-medium-italic.woff',
+                                src: '@/assets/fonts/roboto-v47-latin/roboto-v47-latin-500italic.woff2',
                                 type: 'woff'
                             },
                         ]
@@ -125,7 +125,7 @@ export default defineNuxtConfig({
                         weight: 400,
                         sources: [
                             {
-                                src: '@/assets/fonts/roboto/roboto-regular.woff',
+                                src: '@/assets/fonts/roboto-v47-latin/roboto-v47-latin-regular.woff2',
                                 type: 'woff'
                             },
                         ]
@@ -135,7 +135,7 @@ export default defineNuxtConfig({
                         weight: 100,
                         sources: [
                             {
-                                src: '@/assets/fonts/roboto/roboto-thin.woff',
+                                src: '@/assets/fonts/roboto-v47-latin/roboto-v47-latin-100.woff2',
                                 type: 'woff'
                             },
                         ]
@@ -145,7 +145,7 @@ export default defineNuxtConfig({
                     //     weight: 100,
                     //     sources: [
                     //         {
-                    //             src: '@/assets/fonts/roboto/roboto-thin-italic.woff',
+                    //             src: '@/assets/fonts/roboto-v47-latin/roboto-v47-latin-100italic.woff2',
                     //             type: 'woff'
                     //         },
                     //     ]
@@ -190,7 +190,7 @@ export default defineNuxtConfig({
           'Dark',
         ],
         extras: {
-          font: 'roboto-font',
+          font: null,
         },
         components: {
           defaults: {

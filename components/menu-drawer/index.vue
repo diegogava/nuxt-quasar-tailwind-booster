@@ -50,7 +50,14 @@
 
 <!-- Menu Drawer -->
   <div class="q-pa-md"
-    v-font="[$getFont('Roboto', 500, 'italic')]">
+    v-font="[
+      $getFont('RobotoOverride', 400, 'italic', {
+        selector: '.q-toolbar__title'
+      }),
+      $getFont('RobotoOverride', 400, 'normal', {
+        selector: 'p'
+      })
+    ]">
     <q-layout view="hHh Lpr lff" container style="height: 300px" class="shadow-2 rounded-borders">
       <q-header elevated :class="$q.dark.isActive ? 'bg-secondary' : 'bg-black'">
         <q-toolbar>
@@ -61,7 +68,6 @@
 
       <q-drawer
         v-model="drawer"
-        show-if-above
         :width="200"
         :breakpoint="500"
         bordered
@@ -88,7 +94,7 @@
 
       <q-page-container>
         <q-page padding>
-          <p v-for="n in 15" :key="n">
+          <p v-for="n in 5" :key="n">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nihil praesentium molestias a adipisci, dolore vitae odit, quidem consequatur optio voluptates asperiores pariatur eos numquam rerum delectus commodi perferendis voluptate?
           </p>
         </q-page>

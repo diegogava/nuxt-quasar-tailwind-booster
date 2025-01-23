@@ -1,7 +1,7 @@
 <script setup lang="ts">
 
     // Fonts
-    const { $getFont } = useBoosterFonts(undefined)
+    const { $getFont } = useBoosterFonts()
 
 
     const editor = ref('What you see is <b>what</b> you get.')
@@ -10,7 +10,7 @@
 
     <!-- Edit -->
   <div class="q-pa-md q-gutter-sm"
-    v-font="$getFont('Roboto', 400, 'normal')">
+    v-font="$getFont('RobotoOverride', 400, 'normal')">
     <q-editor v-model="editor" min-height="5rem" />
 
     <q-card flat bordered>
