@@ -28,3 +28,4 @@ logs
 .output/
 package-lock.json
 .history
+env/

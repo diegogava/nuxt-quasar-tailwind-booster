@@ -181,6 +181,22 @@ export default defineNuxtConfig({
 
   },
     quasar: {
+        config: {
+            dark: true,
+            brand: {
+                primary: '#FF1744',
+                secondary: '#FFFFFF',
+                accent: '#ff0033',
+
+                dark: '#1d1d1d',
+                'dark-page': '#121212',
+
+                positive: '#21BA45',
+                negative: '#ff0033',
+                info: '#31CCEC',
+                warning: '#F2C037'
+              },
+        },
         plugins: [
           'BottomSheet',
           'Dialog',
@@ -191,12 +207,13 @@ export default defineNuxtConfig({
         ],
         extras: {
           font: null,
+          //fontIcons: ["mdi-v6"],
         },
         components: {
           defaults: {
-            QBtn: {
-              unelevated: true,
-            },
+            // QBtn: {
+            //   unelevated: true,
+            // },
           },
         },
     },

@@ -9,11 +9,11 @@
     ///////////////////////////////////////////////
 
     // Booster
-    // import boosterHydrate from '#booster/hydrate'
-    // const hydrate = useBoosterHydrate()
+    import boosterHydrate from '#booster/hydrate'
+    const hydrate = useBoosterHydrate()
 
     // Components
-    // const BoosterInfo = defineAsyncComponent(() => import('@/components/booster/info/index.vue'))
+    const MenuDrawerDefault = hydrate(() => import('@/components/menu-drawer-default/index.vue'))
 
     ///////////////////////////////////////////////
     ////////////////// FETCH DATA /////////////////
@@ -30,6 +30,7 @@
     <!-- <booster-info critical>
     </booster-info> -->
     <div class="container mx-auto mt-[64px] min-h-[100vh]">
+        <menu-drawer-default critical></menu-drawer-default>
         <slot></slot>
     </div>
   </div>

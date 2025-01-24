@@ -14,8 +14,7 @@
 
     import MenuDrawer from '@/components/menu-drawer/index.vue'
     import Edit from '@/components/edit/index.vue'
-    
-    // const Edit = hydrate(() => import('@/components/edit/index.vue'))
+    // const MenuDrawerDefault = hydrate(() => import('@/components/menu-drawer-default/index.vue'))
 
 
     const ElementButtonPrimary = hydrate(() => import('@/components/element/Button/Primary.vue'))
@@ -24,13 +23,12 @@
 
 </script>
 <template>
+    <!-- <menu-drawer-default critical></menu-drawer-default> -->
     <ElementButtonPrimary critical label="Primary" />
     <ElementButtonSecondary critical label="Secondary" />
     <ElementButtonTeritary critical label="Teritary" />
 
     <menu-footer critical></menu-footer>
-
     <menu-drawer critical></menu-drawer>
-    
     <edit></edit>
 </template>
